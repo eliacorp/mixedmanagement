@@ -38,7 +38,7 @@ angular.module('myApp')
 
 }])
 
-.directive('artistDirective', function($rootScope, $location, $window, $timeout) {
+.directive('artistDirective', function() {
   return {
     restrict: 'E',
     templateUrl: 'views/section/artist.html',
@@ -46,7 +46,7 @@ angular.module('myApp')
   };
 })
 
-.directive('socialDirective', function($rootScope, $location, $window, $timeout) {
+.directive('socialDirective', function() {
   return {
     restrict: 'E',
     templateUrl: 'views/section/social.html',
@@ -54,7 +54,7 @@ angular.module('myApp')
   };
 })
 
-.directive('collaboratorDirective', function($rootScope, $location, $window, $timeout) {
+.directive('collaboratorDirective', function() {
   return {
     restrict: 'E',
     templateUrl: 'views/section/collaborator.html',
@@ -62,7 +62,7 @@ angular.module('myApp')
   };
 })
 
-.directive('feedDirective', function($rootScope, $location, $window, $timeout) {
+.directive('feedDirective', function() {
   return {
     restrict: 'E',
     templateUrl: 'views/section/feed.html',
@@ -70,7 +70,7 @@ angular.module('myApp')
   };
 })
 
-.directive('statusDirective', function($rootScope, $location, $window, $timeout) {
+.directive('statusDirective', function() {
   return {
     restrict: 'E',
     templateUrl: 'views/section/status.html',
@@ -78,7 +78,7 @@ angular.module('myApp')
   };
 })
 
-.directive('logoDirective', function($rootScope, $location, $window, $timeout) {
+.directive('logoDirective', function() {
   return {
     restrict: 'E',
     templateUrl: 'views/section/logo.html',
