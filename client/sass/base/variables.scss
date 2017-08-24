@@ -1,0 +1,109 @@
+/*....................................SCSS VARIABLES..................................*/
+
+
+// ........................................................FONT WEIGHTS
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 900;
+
+
+// ........................................................FONT SIZES
+$font-size-h1:23px;
+$font-size-h2:18px;
+$font-size-h3:14px;
+$font-size-p: 10px;
+$font-size-p2: 8px;
+
+
+$font-size-h1-mobile: 23px;
+$font-size-h2-mobile: 18px;
+$font-size-h3-mobile: 14px;
+$font-size-p-mobile: 10px;
+$font-size-p2-mobile: 8px;
+
+// ........................................................FONT FAMILIES
+// 'Playfair Display SC', serif
+// font-family: 'Prata', serif;
+$font-family-h1: 'akkurat-light';
+$font-family-h2: 'akkurat-light';
+$font-family-h3: 'akkurat-light';
+$font-family-p: 'akkurat-light';
+$font-family-p2: 'akkurat-light';
+// $font-family-h1: "futura_std_bold";
+// $font-family-h2: "futura_std_bold";
+
+// ........................................................FONT LINEHEIGHTS
+$line-height-h1: 100px;
+$line-height-h2: 130px;
+$line-height-h3: 30px;
+$line-height-p: 22px;
+$line-height-p2: 22px;
+
+$line-height-h1-mobile: 100px;
+$line-height-h2-mobile: 130px;
+$line-height-h3-mobile: 30px;
+$line-height-p-mobile: 22px;
+$line-height-p2-mobile: 22px;
+
+$letter-spacing: 2px;
+$letter-spacing-h1: 1px;
+$letter-spacing-h2: 1px;
+$letter-spacing-h3: 1px;
+$letter-spacing-p:1px;
+
+
+$letter-spacing-h1-mobile: 1px;
+$letter-spacing-h2-mobile: 1px;
+$letter-spacing-h3-mobile: 1px;
+$letter-spacing-p-mobile:1px;
+
+
+// ........................................................COLORS
+$black: #000000;
+$white: #FFFFFF;
+$yellow: #ede611;
+$green: #00FF00;
+$red:#c52026;
+$pink:#f7c0cd;
+$grey:#a8a8a8;
+$pure-green: #00FF00;
+$lime:#00FF00;
+$light-grey:#D3D3D3;
+
+
+// ........................................................MARGINS
+$margin-sides: 25px;
+$margin-bottom: 35px;
+$margin-top: 200px;
+$margin-sides-mobile:10px;
+$margin-left-paragraph:5px;
+$margin-left-h2:15px;
+$margin-top-p:30px;
+$margin-top-h2:12px;
+$margin-top-block:100px;
+$margin-top-li:50px;
+
+// ........................................................TRANSITION TIMINGS
+$transition-extreme-slow: 1.4s;
+$transition-slow: .6s;
+$transition-medium: .4s;
+$transition-fast: .2s;
+
+
+
+// ........................................................Z-INDEXES
+$z-loader:15;
+$z-logo:11;
+$z-clickOut: 12;
+$z-pop:12;
+$z-nav:11;
+$z-nav-mobile:11;
+
+
+$z-close-text:5;
+$z-close-image:4;
+
+
+
+
+/*....................................................................................*/

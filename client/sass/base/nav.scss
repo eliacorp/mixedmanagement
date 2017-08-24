@@ -1,0 +1,13 @@
+
+
+.nav{
+  position: fixed;
+  left:$margin-sides;
+  top:$margin-sides;
+  z-index:$z-nav;
+  width: auto;
+  @include respond-to(phone){
+    top: auto;
+    bottom: 65px
+  }
+}

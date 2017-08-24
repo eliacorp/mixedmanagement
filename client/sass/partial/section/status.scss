@@ -1,0 +1,40 @@
+.status{
+  width: 30vw;
+  height: 15vh;
+  border-left: 1px solid #FFF;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.status-content{
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+}
+
+.status-left{
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  left: 0;
+  p{
+    margin-left: $margin-sides;
+    text-align: left;
+  }
+}
+
+.status-right{
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  right: 0;
+  p{
+    margin-right: $margin-sides;
+    text-align: right;
+    svg{
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
