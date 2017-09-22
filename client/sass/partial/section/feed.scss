@@ -8,6 +8,13 @@
   top:0;
   border-bottom: 1px solid #FFF;
   overflow-y: scroll;
+  @include respond-to(phone){
+    position: relative;
+    width: 100vw;
+    overflow: auto;
+    left: 0;
+    top:auto;
+  }
 }
 
 .feed-ul{

@@ -9,9 +9,19 @@ angular.module('myApp')
   $rootScope.firstLoading=false;
   $rootScope.paginationInProcess=false;
   $rootScope.Artist;
+  $rootScope.DetailArtist;
 
 
 
+
+  $scope.thisArtist=(uid)=>{
+    for (var i in $rootScope.Artist.results){
+      if($rootScope.Artist.results[i].uid==uid){
+        $rootScope.DetailArtist=$rootScope.Artist.results[i];
+        console.log($rootScope.DetailArtist);
+      }
+    }
+  }
 
 
 
@@ -37,6 +47,8 @@ angular.module('myApp')
             $rootScope.Artist.results=$rootScope.Artist.results.concat(Data.results);
           }
 
+          $scope.thisArtist($rootScope.Artist.results[0].uid);
+
           $scope.$broadcast('ArtistReady');
           $rootScope.paginationInProcess=false;
           console.log(Data);
@@ -51,6 +63,7 @@ angular.module('myApp')
           $rootScope.Artist.results_size = Data.results_size; // the size of the current page
           $rootScope.Artist.total_pages = Data.total_pages; // the number of pages
           $rootScope.Artist.total_results_size = Data.total_results_size; // the total size of results across all pages
+
     }, function(err) {
       console.log(err);
       // called asynchronously if an error occurs
@@ -93,6 +106,10 @@ angular.module('myApp')
           }
       });
     }, 1000);
+
+
+
+
 
 
 

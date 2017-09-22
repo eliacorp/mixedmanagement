@@ -5,6 +5,12 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  @include respond-to(phone){
+    position: relative;
+    width: 100vw;
+    left: 0;
+    top:auto;
+  }
 }
 
 .status-content{

@@ -303,5 +303,4 @@ var nav = require("./nav.js");
 var home = require("./home.js");
 var artist = require("./section/artist.js");
 var status = require("./section/status.js");
-var collaborator = require("./section/collaborator.js");
 var feed = require("./section/feed.js");

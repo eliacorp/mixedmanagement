@@ -1,0 +1,30 @@
+<div class="detail">
+  <h2 class="detail-h1">{{DetailArtist.data['artist.name'].value[0].text}}</h2>
+
+  <div class="detail-link">
+    <ul class="detail-link-ul">
+      <li class="detail-link-li" ng-repeat="l in DetailArtist.data['artist.link'].value" ng-mouseenter="hoverName=true" ng-mouseleave="hoverName=false">
+        <a href="{{l.weblink.value.url}}">{{hoverName ? l.provider.value[0].text : l.initials.value}}</a>
+      </li>
+    </ul>
+  </div>
+  
+  <p class="detail-description">
+    {{DetailArtist.data['artist.description'].value[0].text}}
+  </p>
+
+
+
+  <div class="detail-discography">
+    <ul class="detail-discography-ul">
+      <li class="detail-discography-li" ng-repeat="d in DetailArtist.data['artist.body'].value">
+        <img class="detail-discography-cover" src="{{d['non-repeat'].cover.value.main.url}}" alt="{{d['non-repeat'].title.value[0].text}}">
+        <div class="detail-discography-li-links">
+          <a href="{{l.url.value.url}}" ng-repeat="l in d.repeat">
+            {{l.provider.value}}
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

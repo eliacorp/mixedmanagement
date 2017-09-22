@@ -54,10 +54,10 @@ angular.module('myApp')
   };
 })
 
-.directive('collaboratorDirective', function() {
+.directive('detailDirective', function() {
   return {
     restrict: 'E',
-    templateUrl: 'views/section/collaborator.html',
+    templateUrl: 'views/section/detail.html',
     replace: true
   };
 })

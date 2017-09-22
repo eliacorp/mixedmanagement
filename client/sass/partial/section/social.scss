@@ -5,6 +5,12 @@
   top:20vh;
   height: 10vh;
   border-bottom: 1px solid #FFF;
+  @include respond-to(phone){
+    position: relative;
+    width: 100vw;
+    left: 0;
+    top:auto;
+  }
 }
 
 .social-content{
@@ -17,7 +23,7 @@
     width: 5vw;
     height: 10vh;
     @include p();
-    line-height: 10vh;
+    line-height: 10vh!important;
     vertical-align: middle;
     text-align: center;
   }

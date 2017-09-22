@@ -1,0 +1,76 @@
+.detail{
+  position: absolute;
+  left:40vw;
+  width: 30vw;
+  height: 70vh;
+  top:30vh;
+  overflow-y: scroll;
+  @include respond-to(phone){
+    position: relative;
+    width: 100vw;
+    overflow: auto;
+    left: 0;
+    top:auto;
+  }
+}
+
+.detail-h1{
+  // border-bottom: 1px solid #FFF;
+}
+
+.detail-description{
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: $margin-top-p;
+}
+
+.detail-link{
+  width: 90%;
+  margin: auto;
+  display: block;
+  .detail-link-ul{
+    display: block;
+    width: 100%;
+    .detail-link-li{
+      width: auto;
+      height: 20px;
+      margin-left:10px;
+      display: inline-block;
+      &:nth-child(1){
+        margin-left:0;
+      }
+
+      a{
+        display: block;
+        height: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+
+
+.detail-discography{
+  position: relative;
+  width: 100%;
+  margin-top: $margin-top-block;
+  .detail-discography-ul{
+    width: 90%;
+    margin: auto;
+    .detail-discography-li{
+      width: 100%;
+      clear: both;
+      margin-top: $margin-top-li;
+      .detail-discography-cover{
+        width: 40%;
+        display: block;
+        margin: auto;
+      }
+      &:nth-last-child(1){
+        margin-bottom:$margin-top-li;
+      }
+    }
+  }
+}

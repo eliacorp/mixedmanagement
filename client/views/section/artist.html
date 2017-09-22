@@ -2,18 +2,11 @@
   <h2 class="artist-h1">artists</h2>
 
   <ul class="artist-ul">
-    <li class="artist-li vertical flip-container" ng-repeat="a in Artist.results" ng-class="{'hover': showLinksArtist}" ng-mouseover="showLinksArtist=true" ng-mouseout="showLinksArtist=false">
-      <div class="flipper vertical">
-        <div class="front vertical">
-          <p class="artist-li-p vertical">{{a.data['artist.name'].value[0].text}}</p>
-        </div>
-        <div class="back vertical">
-          <div class="artist-li-back-content">
-            <a href="http://wikipedia.com">&#9833;</a>
-            <a href="http://wikipedia.com">@</a>
-          </div>
-        </div>
-      </div>
+    <li class="artist-li" ng-click="thisArtist(a.uid)" ng-repeat="a in Artist.results" ng-class="{'hover': showLinksArtist}" ng-mouseover="showLinksArtist=true" ng-mouseout="showLinksArtist=false">
+
+        <p class="artist-li-p">{{a.data['artist.name'].value[0].text}}</p>
+        <p class="artist-li-p-arrow" ng-show="showLinksArtist">->></p>
+
     </li>
   </ul>
 
