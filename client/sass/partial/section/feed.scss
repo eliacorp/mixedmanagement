@@ -11,9 +11,11 @@
   @include respond-to(phone){
     position: relative;
     width: 100vw;
+    height: auto;
     overflow: auto;
     left: 0;
     top:auto;
+    // border-top: 1px solid #FFF;
   }
 }
 
@@ -25,5 +27,8 @@
     width: 100%;
     text-align: center;
     margin-bottom: $margin-top-p;
+    &:nth-child(1){
+      margin-top: $margin-top-p;
+    }
   }
 }

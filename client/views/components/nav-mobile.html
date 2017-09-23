@@ -1,0 +1,6 @@
+<nav class="nav-mobile" ng-controller="navCtrl" ng-show="isMobile">
+  <div class="nav-mobile-content">
+    <h2 class="nav-h1" ng-class="{'underlined': mobilePage=='artist'}" ng-click="showSection('artist')">artists</h2>
+    <h2 class="nav-h1" ng-class="{'underlined': mobilePage=='feed'}" ng-click="showSection('feed')">feed</h2>
+  </div>
+</nav>

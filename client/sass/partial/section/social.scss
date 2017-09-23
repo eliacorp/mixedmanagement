@@ -18,6 +18,9 @@
   width: 20vw;
   margin: auto;
   white-space: nowrap;
+  @include respond-to(phone){
+    width: 80vw;
+  }
   a{
     display: inline-block;
     width: 5vw;
@@ -26,5 +29,8 @@
     line-height: 10vh!important;
     vertical-align: middle;
     text-align: center;
+    @include respond-to(phone){
+      width: 20vw;
+    }
   }
 }

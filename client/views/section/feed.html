@@ -1,5 +1,5 @@
 <div class="feed" ng-controller="feedCtrl">
-  <h2>feed</h2>
+  <h2 ng-if="!isMobile">feed</h2>
 
   <ul class="feed-ul">
     <li class="feed-li" ng-repeat="f in Feed.results">

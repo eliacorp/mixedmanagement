@@ -11,3 +11,44 @@
     bottom: 65px
   }
 }
+
+
+.nav-mobile{
+  width: 30vw;
+  left:40vw;
+  top:20vh;
+  height: $line-height-h2;
+  border-bottom: 1px solid #FFF;
+  white-space: nowrap;
+  @include respond-to(phone){
+    position: relative;
+    width: 100vw;
+    left: 0;
+    top:auto;
+  }
+  .nav-mobile-content{
+    width: 50vw;
+    margin: auto;
+    h2{
+      display: inline-block;
+      @include h2();
+      // height: 10vh;
+      width: 25vw;
+      display: inline-block;
+      line-height: $line-height-h2!important;
+      vertical-align: middle;
+      text-align: center;
+      text-decoration: none;
+      cursor:pointer;
+      @include hover-effect-color(#FFFFFF,#e2e2e2);
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.underlined{
+  text-decoration: underline!important;
+}

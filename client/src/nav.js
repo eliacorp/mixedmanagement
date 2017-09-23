@@ -64,8 +64,10 @@ angular.module('myApp')
 
 
 
-
-
+$rootScope.mobilePage='artist';
+$scope.showSection=(page)=>{
+  $rootScope.mobilePage=page;
+}
 
 
 
@@ -74,6 +76,16 @@ angular.module('myApp')
 
 }])
 
+.directive('navMobile', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'views/components/nav-mobile.html',
+    replace: true,
+    link: function(scope, elem, attrs) {
+
+    }
+  };
+})
 
 .directive('navDirective', function() {
   return {

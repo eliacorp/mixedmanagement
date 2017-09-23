@@ -1,5 +1,5 @@
 <div class="artist" ng-controller="artistCtrl" ng-init="showLinksArtist=false">
-  <h2 class="artist-h1">artists</h2>
+  <h2 class="artist-h1" ng-if="!isMobile">artists</h2>
 
   <ul class="artist-ul">
     <li class="artist-li" ng-click="thisArtist(a.uid)" ng-repeat="a in Artist.results" ng-class="{'hover': showLinksArtist}" ng-mouseover="showLinksArtist=true" ng-mouseout="showLinksArtist=false">

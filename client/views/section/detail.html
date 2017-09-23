@@ -8,7 +8,7 @@
       </li>
     </ul>
   </div>
-  
+
   <p class="detail-description">
     {{DetailArtist.data['artist.description'].value[0].text}}
   </p>
@@ -20,8 +20,8 @@
       <li class="detail-discography-li" ng-repeat="d in DetailArtist.data['artist.body'].value">
         <img class="detail-discography-cover" src="{{d['non-repeat'].cover.value.main.url}}" alt="{{d['non-repeat'].title.value[0].text}}">
         <div class="detail-discography-li-links">
-          <a href="{{l.url.value.url}}" ng-repeat="l in d.repeat">
-            {{l.provider.value}}
+          <a href="{{l.url.value.url}}" ng-repeat="a in d.repeat" ng-mouseenter="hoverDisco=true" ng-mouseleave="hoverDisco=false">
+            {{hoverDisco ? a.provider.value : a.initials.value}}
           </a>
         </div>
       </li>
