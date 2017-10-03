@@ -1,0 +1,120 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "uid"
+      }
+    },
+    "name" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label" : "name"
+      }
+    },
+    "index" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "index"
+      }
+    },
+    "description" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label" : "description"
+      }
+    },
+    "link" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "initials" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "initials"
+            }
+          },
+          "provider" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label" : "provider"
+            }
+          },
+          "weblink" : {
+            "config" : {
+              "label" : "weblink",
+              "select" : "web"
+            },
+            "type" : "Link"
+          }
+        },
+        "label" : "link"
+      }
+    }
+  },
+  "Discography" : {
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "choices" : {
+          "album" : {
+            "type" : "Slice",
+            "fieldset" : "album",
+            "description" : "album",
+            "icon" : "music_note",
+            "non-repeat" : {
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label" : "title"
+                }
+              },
+              "date" : {
+                "type" : "Date",
+                "config" : {
+                  "label" : "date"
+                }
+              },
+              "cover" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : {
+                    "width" : null,
+                    "height" : null
+                  },
+                  "thumbnails" : [ ],
+                  "label" : "cover"
+                }
+              }
+            },
+            "repeat" : {
+              "initials" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "initials"
+                }
+              },
+              "provider" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "provider"
+                }
+              },
+              "url" : {
+                "type" : "Link",
+                "config" : {
+                  "label" : "url"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

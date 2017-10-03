@@ -1,8 +1,9 @@
 .artist{
   width:40vw;
   height: 100vh;
-  border-right: 1px solid #FFF;
+  // border-right: 1px solid #FFF;
   overflow-y: scroll;
+  // background-color: rgba(0,0,0,0.2);
   @include respond-to(phone){
     position: relative;
     width: 100vw;
@@ -13,7 +14,8 @@
 }
 
 .artist-h1{
-  border-bottom: 1px solid #FFF;
+  // border-bottom: 1px solid #FFF;
+  background-color: rgba(255,255,255,0.20);
 }
 
 
@@ -24,7 +26,8 @@
     width: 100%;
     display: block;
     line-height: 70px;
-    border-bottom: 1px solid #FFF;
+    // border-bottom: 1px solid #FFF;
+    background-color: rgba(255,255,255,0.20);
     position: relative;
     .artist-li-p{
       display: block;

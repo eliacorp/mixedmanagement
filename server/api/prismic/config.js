@@ -1,6 +1,6 @@
 module.exports = {
 
-  apiEndpoint: 'https://mixedmanagement.cdn.prismic.io/api',
+  apiEndpoint: 'https://mixedmanagement1.cdn.prismic.io/api',
 
   // -- Access token if the Master is not open
   // accessToken: 'xxxxxx',

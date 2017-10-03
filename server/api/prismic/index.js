@@ -4,7 +4,7 @@ let request = require('request');
 let fs = require('fs');
 let Prismic = require('prismic-nodejs');
 
-var ENDPOINT = "http://mixedmanagement.cdn.prismic.io/api";
+var ENDPOINT = "http://mixedmanagement1.cdn.prismic.io/api";
 var ACCESSTOKEN = null; // Only if your API is private
 
 exports.getAll = function (req, res) {
@@ -12,7 +12,7 @@ exports.getAll = function (req, res) {
   var type= req.query.type;
   console.log(type);
   console.log(page);
-    Prismic.Api('https://mixedmanagement.cdn.prismic.io/api', function (err, Api) {
+    Prismic.Api(ENDPOINT, function (err, Api) {
         Api.form('everything')
             .ref(Api.master())
             .query(Prismic.Predicates.at('document.type', type))
@@ -48,7 +48,7 @@ exports.getSingle = function (req, res) {
   console.log("getSingle", queryString, uid);
 
 
-  Prismic.Api('https://mixedmanagement.cdn.prismic.io/api', function (err, Api) {
+  Prismic.Api(ENDPOINT, function (err, Api) {
 
       Api.form('everything')
           .ref(Api.master())
@@ -70,7 +70,7 @@ exports.getType = function (req, res) {
 
 
 
-  Prismic.Api('https://mixedmanagement.cdn.prismic.io/api', function (err, Api) {
+  Prismic.Api(ENDPOINT, function (err, Api) {
       Api.form('everything')
           .ref(Api.master())
           .query(Prismic.Predicates.at("document.type", type))
