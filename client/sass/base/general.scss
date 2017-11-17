@@ -73,7 +73,7 @@ html{
   margin: 0, 0;
   padding: 0, 0;
   box-sizing: border-box;
-  background-color: $darkgrey;
+  background-color: $white;
   -webkit-overflow-scrolling: touch;
   @include respond-to(phone){
     // overflow-y: scroll;
@@ -99,7 +99,7 @@ p, a, li {
   font-size: $font-size-p;
   list-style-type: none;
   letter-spacing:$letter-spacing;
-  color: #FFFFFF;
+  color: $darkgrey;
 }
 
 
@@ -113,7 +113,7 @@ a{
   cursor:pointer;
   // @include h2();
   text-transform: uppercase;
-  @include hover-effect-color(#FFFFFF,#e2e2e2);
+  @include hover-effect-color($darkgrey,#ffffff);
   &:hover{
     text-decoration: underline;
   }
@@ -125,12 +125,12 @@ p{
 
 h1{
   @include h1();
-  color:#FFFFFF;
+  color:$darkgrey;
 }
 
 h2{
   @include h2();
-  color:#FFFFFF;
+  color:$darkgrey;
 }
 
 
@@ -239,7 +239,7 @@ $fade-in: 1s;
   left:0;
   width: 100vw;
   height: 100vh;
-  background-color: $black;
+  background-color: $white;
   z-index: $z-loader;
 
   .loader-sprite{
