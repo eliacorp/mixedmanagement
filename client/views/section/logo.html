@@ -1,7 +1,7 @@
-<div class="logo">
+<div class="logo" ng-mouseenter="isLogoType=true" ng-mouseleave="isLogoType=false" ng-init"isLogoType">
 
 
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <svg ng-show="!isLogoType" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 width="2000px" height="2000px" viewBox="0 0 2000 2000" style="enable-background:new 0 0 2000 2000;" xml:space="preserve">
   <g>
   	<g style="opacity:0.1;">
@@ -17,6 +17,40 @@
   </g>
   </svg>
 
+
+
+  <svg ng-show="isLogoType" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 viewBox="0 0 2000 2000" style="enable-background:new 0 0 2000 2000;" xml:space="preserve">
+  <style type="text/css">
+  	.st0{opacity:0.1;}
+  	.st1{fill:#000000;}
+  </style>
+  <g class="st0">
+  	<path class="st1" d="M356.6,977.3h-40.9v-65.2l-22.8,65.2h-36.1L234,912.1v65.2h-40.9V809H234l40.9,116.9L315.7,809h40.9V977.3z"/>
+  	<path class="st1" d="M413.3,809v168.3h-36.1V809H413.3z"/>
+  	<path class="st1" d="M540.5,893.2l57.5,84.2h-50.5l-32.2-47.1l-32.2,47.1h-50.5l57.5-84.2L432.6,809h50.5l32.2,47.1l32.2-47.1H598
+  		L540.5,893.2z"/>
+  	<path class="st1" d="M653.5,845.1v30.1h96.2v36.1h-96.2v30.1h96.2v36.1H617.5V809h132.2v36.1H653.5z"/>
+  	<path class="st1" d="M822.6,977.3h-50V809h50C948.1,809,948.1,977.3,822.6,977.3z M822.6,845.1h-13.9v96.2h13.9
+  		C896.1,941.2,896.1,845.1,822.6,845.1z"/>
+  	<path class="st1" d="M356.6,1193h-40.9v-65.2l-22.8,65.2h-36.1l-22.8-65.2v65.2h-40.9v-168.3H234l40.9,116.9l40.9-116.9h40.9V1193z
+  		"/>
+  	<path class="st1" d="M467.4,1150.9h-48.3l-14.2,42.1h-37.3l57.5-168.3h36.1l57.5,168.3h-37.3L467.4,1150.9z M457.6,1122.1
+  		l-14.4-43.5l-14.4,43.5H457.6z"/>
+  	<path class="st1" d="M676.4,1024.7V1193h-40.9L573,1091.3V1193h-40.9v-168.3H573l62.5,101.7v-101.7H676.4z"/>
+  	<path class="st1" d="M789.6,1150.9h-48.3l-14.2,42.1h-37.3l57.5-168.3h36.1l57.5,168.3h-37.3L789.6,1150.9z M779.8,1122.1
+  		l-14.4-43.5l-14.4,43.5H779.8z"/>
+  	<path class="st1" d="M1001.4,1099.2v12.3c0,45-36.5,81.5-81.3,81.5c-45,0-81.5-36.5-81.5-81.5c0-45,36.5-86.8,81.5-86.8
+  		c22.4,0,42.6,9.1,57.2,23.8l-27.2,23.6c-7.9-7.2-18.5-11.5-30.1-11.5c-25.2,0-45.7,25.7-45.7,50.7c0,25.2,20.4,45.7,45.7,45.7
+  		c16.6,0,31.3-9.1,39.2-22.6l-27.6,1v-36.1H1001.4z"/>
+  	<path class="st1" d="M1052.6,1060.8v30.1h96.2v36.1h-96.2v30.1h96.2v36.1h-132.2v-168.3h132.2v36.1H1052.6z"/>
+  	<path class="st1" d="M1332.7,1193h-40.9v-65.2L1269,1193H1233l-22.8-65.2v65.2h-40.9v-168.3h40.9l40.9,116.9l40.9-116.9h40.9V1193z
+  		"/>
+  	<path class="st1" d="M1389.2,1060.8v30.1h96.2v36.1h-96.2v30.1h96.2v36.1h-132.2v-168.3h132.2v36.1H1389.2z"/>
+  	<path class="st1" d="M1647.7,1024.7V1193h-40.9l-62.5-101.7V1193h-40.9v-168.3h40.9l62.5,101.7v-101.7H1647.7z"/>
+  	<path class="st1" d="M1808.8,1060.8h-53.9V1193h-36.1v-132.2h-54.3v-36.1h144.3V1060.8z"/>
+  </g>
+  </svg>
 
 
 
