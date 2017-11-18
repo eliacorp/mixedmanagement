@@ -10,13 +10,19 @@ var ACCESSTOKEN = null; // Only if your API is private
 exports.getAll = function (req, res) {
   var page = req.query.page;
   var type= req.query.type;
+  var ordering;
+  if(type=='artist'){
+    ordering = '[my.'+type+'.name desc]';
+  }else{
+    ordering = '[my.'+type+'.date desc]';
+  }
   console.log(type);
   console.log(page);
     Prismic.Api(ENDPOINT, function (err, Api) {
         Api.form('everything')
             .ref(Api.master())
             .query(Prismic.Predicates.at('document.type', type))
-            .orderings('[my.'+type+'.date desc]')
+            .orderings(ordering)
             .pageSize(5)
             .page(page)
             .submit(function (err, response) {

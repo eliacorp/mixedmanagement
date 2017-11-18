@@ -80,11 +80,11 @@ angular.module('myApp')
 
 
   if(!$rootScope.Artist){
-    $scope.getArtistList('artist', 'my.artist.date', 1);
+    $scope.getArtistList('artist', 'my.artist.name', 1);
   }else{
     if($location.search()){
       $rootScope.Artist.results=[];
-      $scope.getArtistList('artist', 'my.artist.date', 1);
+      $scope.getArtistList('artist', 'my.artist.name', 1);
     }
   }
 
