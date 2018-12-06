@@ -1,15 +1,14 @@
 <div class="status" ng-controller="statusCtrl">
 
 
-  <table>
+  <!-- <table>
     <tr>
-      <td>
+      <td> -->
 
       <div class="status-content">
+        <social-directive></social-directive>
         <div class="status-left">
-          <p>{{ clock | date }}</p>
-          <p>{{ clock | date:'HH:mm:ss'}}</p>
-
+          <p>{{ clock | date }}</p><p>{{ clock | date:'HH:mm:ss'}}</p>
         </div>
 
         <div class="status-right">
@@ -26,9 +25,9 @@
         </div>
       </div>
 
-      </td>
+      <!-- </td>
     </tr>
-  </table>
+  </table> -->
 
 
 

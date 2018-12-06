@@ -1,11 +1,13 @@
 .social{
-  position: absolute;
-  width: 30vw;
-  left:40vw;
-  top:20vh;
-  height: 10vh;
+  position: relative;
+  display: inline-block;
+  // width: 30vw;
+  // right:30vw;
+  // bottom:$margin-sides;
+  // height: 10vh;
+  z-index: 99;
   // border-bottom: 1px solid #FFF;
-  background-color: $white;
+  // background-color: $white;
   @include respond-to(phone){
     position: relative;
     width: 100vw;
@@ -25,9 +27,9 @@
   a{
     display: inline-block;
     width: 5vw;
-    height: 10vh;
+    // height: 10vh;
     @include p();
-    line-height: 10vh!important;
+    // line-height: 10vh!important;
     vertical-align: middle;
     text-align: center;
     @include respond-to(phone){

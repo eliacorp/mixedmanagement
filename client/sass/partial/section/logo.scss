@@ -2,15 +2,18 @@
   width: 30vw;
   height: 20vh;
   position: absolute;
-  left: 40vw;
+  left: 50%;
   top:0vh;
+  margin-left: -15vw;
   // border-bottom: #FFFFFF solid 1px;
   background-color: $white;
+  z-index:999;
   @include respond-to(phone){
     position: relative;
     width: 100vw;
     left: 0;
     top:auto;
+    margin-left: auto;
   }
   svg{
     width: 90%;

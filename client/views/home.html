@@ -1,11 +1,11 @@
 <div class="home" summary="home page">
   <logo-directive></logo-directive>
-  <social-directive></social-directive>
+  <status-directive></status-directive>
   <nav-mobile ng-if="isMobile"></nav-mobile>
   <artist-directive ng-if="!isMobile || (isMobile&&(mobilePage=='artist'))"></artist-directive>
   <detail-directive ng-if="!isMobile || (isMobile&&(mobilePage=='artist'))"></detail-directive>
 
-  <feed-directive ng-if="!isMobile || (isMobile&&(mobilePage=='feed'))"></feed-directive>
-  <status-directive></status-directive>
+  <!-- <feed-directive ng-if="!isMobile || (isMobile&&(mobilePage=='feed'))"></feed-directive> -->
+
 
 </div>

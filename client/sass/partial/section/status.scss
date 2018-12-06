@@ -1,16 +1,17 @@
 .status{
-  width: 30vw;
-  height: 15vh;
+  width: auto;
+  // height: 15vh;
   // border-left: 1px solid #FFF;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: $white;
+  right: $margin-sides;
+  bottom: $margin-sides;
+  // background-color: $white;
   @include respond-to(phone){
     position: relative;
     width: 100vw;
     left: 0;
     top:auto;
+    bottom: auto;
     // border-right: 1px solid #FFF;
   }
 }
@@ -22,24 +23,28 @@
 }
 
 .status-left{
-  width: 50%;
+  width: auto;
   position: relative;
   display: inline-block;
   left: 0;
   p{
+    display: inline-block;
     margin-left: $margin-sides;
     text-align: left;
   }
 }
 
 .status-right{
-  width: 50%;
+  width: auto;
   position: relative;
   display: inline-block;
   right: 0;
+  text-align: right;
+  vertical-align: bottom;
   p{
     margin-right: $margin-sides;
     text-align: right;
+    display: inline-block;
     svg{
       width: 15px;
       height: 15px;
