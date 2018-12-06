@@ -38,50 +38,50 @@ angular.module('myApp')
 
 }])
 
-.directive('artistDirective', function($rootScope, $location, $window, $timeout) {
+.directive('artistDirective', ['$rootScope', '$location', '$window', '$timeout', function($rootScope, $location, $window, $timeout) {
   return {
     restrict: 'E',
     templateUrl: 'views/section/artist.html',
     replace: true
   };
-})
+}])
 
-.directive('socialDirective', function($rootScope, $location, $window, $timeout) {
+.directive('socialDirective', ['$rootScope', '$location', '$window', '$timeout', function($rootScope, $location, $window, $timeout) {
   return {
     restrict: 'E',
     templateUrl: 'views/section/social.html',
     replace: true
   };
-})
+}])
 
-.directive('collaboratorDirective', function($rootScope, $location, $window, $timeout) {
+.directive('collaboratorDirective', ['$rootScope', '$location', '$window', '$timeout', function($rootScope, $location, $window, $timeout) {
   return {
     restrict: 'E',
     templateUrl: 'views/section/collaborator.html',
     replace: true
   };
-})
+}])
 
-.directive('feedDirective', function($rootScope, $location, $window, $timeout) {
+.directive('feedDirective', ['$rootScope', '$location', '$window', '$timeout', function($rootScope, $location, $window, $timeout) {
   return {
     restrict: 'E',
     templateUrl: 'views/section/feed.html',
     replace: true
   };
-})
+}])
 
-.directive('statusDirective', function($rootScope, $location, $window, $timeout) {
+.directive('statusDirective', ['$rootScope', '$location', '$window', '$timeout', function($rootScope, $location, $window, $timeout) {
   return {
     restrict: 'E',
     templateUrl: 'views/section/status.html',
     replace: true
   };
-})
+}])
 
-.directive('logoDirective', function($rootScope, $location, $window, $timeout) {
+.directive('logoDirective', ['$rootScope', '$location', '$window', '$timeout', function($rootScope, $location, $window, $timeout) {
   return {
     restrict: 'E',
     templateUrl: 'views/section/logo.html',
     replace: true
   };
-});
+}]);
